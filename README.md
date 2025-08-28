@@ -1,6 +1,6 @@
-# apexclick
+# ApexClick
 
-A minimal Electron application with TypeScript
+A autocliker made by iamByte and it is _literally_ just a autoclicker.
 
 ## Recommended IDE Setup
 
@@ -12,12 +12,16 @@ A minimal Electron application with TypeScript
 
 ```bash
 $ npm install
+or
+$ bun install
 ```
 
 ### Development
 
 ```bash
 $ npm run dev
+or
+$ bun run dev
 ```
 
 ### Build
@@ -25,10 +29,11 @@ $ npm run dev
 ```bash
 # For windows
 $ npm run build:win
+or
+$ bun run build:win
 
 # For macOS
 $ npm run build:mac
-
-# For Linux
-$ npm run build:linux
+or
+$ bun run build:mac
 ```
