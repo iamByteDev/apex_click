@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ApexClick</title>
+    <link href="./assets/main.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="title">ApexClick</h1>
+        <p class="subtitle">Precision clicking automation</p>
+      </div>
+
+      <div class="control-group">
+        <label class="label" id="intervalMs">Click Interval</label>
+        <input
+          type="number"
+          class="input-field"
+          id="interval"
+          placeholder="500"
+          value="500"
+          min="1"
+          max="60000"
+        />
+        <div class="hotkey-display">milliseconds</div>
+      </div>
+
+      <div class="control-group" style="display: none">
+        <label class="label">Hotkey to Start</label>
+        <input
+          type="text"
+          class="input-field"
+          id="hotkey"
+          placeholder="Click to set hotkey"
+          readonly
+        />
+        <div class="hotkey-display">Press any key combination</div>
+      </div>
+
+      <div class="button-group">
+        <button class="btn btn-primary" id="startBtn">
+          <span>Start</span>
+        </button>
+        <button class="btn btn-secondary" id="stopBtn">
+          <span>Stop</span>
+        </button>
+      </div>
+
+      <div class="status" id="status">
+        <div class="status-text">Ready to start</div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/renderer.ts"></script>
+  </body>
+</html>
